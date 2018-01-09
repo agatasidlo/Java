@@ -21,7 +21,7 @@ public class Main extends Application {
 	
 	public static void openSocket() {
 		try {
-			s = new Socket ("192.168.43.238", 6663);
+			s = new Socket ("IP number", 6663);					//here it must be IP number of server
 			dout = new DataOutputStream (s.getOutputStream());
 		}
 		catch (Exception e) {System.out.println(e);}
